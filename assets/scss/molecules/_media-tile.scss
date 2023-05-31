@@ -1,0 +1,50 @@
+.hl-media {
+    display: flex;
+    width: 100%;
+    transition: all .3s;
+    margin-bottom: $spacer-4;
+    &:last-child {
+        margin-bottom: $spacer-0;
+    }
+    &__date {
+        width: 20%;
+        background-color: #292D49;
+        padding: $spacer-4;
+        color: $color-green-2;
+        font-size: 20px;
+        line-height: 28px;
+        span {
+            font-weight: $font-bold;
+            font-size: 40px;
+            line-height: 46px;
+            display: block;
+        }
+    }
+    &__contents {
+        background-color: #EFEFEF;
+        width: 80%;
+        padding: $spacer-4;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: $font-medium;
+        p {
+            margin-bottom: $spacer-4;
+        }
+    }
+    &:hover {
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+}
+
+@include mobile {
+    .hl-media {
+        flex-direction: column;
+        &__date,
+        &__contents {
+            width: 100%;
+            padding: 16px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.hl-heading {
+    font-size: 28px;
+    font-weight: $font-Extra-bold;
+    margin-bottom: $spacer-4;
+    span {
+        color: $color-green-2;
+    }
+    &__outer {
+        position: relative;
+        padding-left: 70px;
+    }
+}
+
+@include tablet-desktop {
+    .hl-heading {
+        font-size: 32px;
+        margin-bottom: $spacer-5;
+        &__outer {
+            padding-left: 70px;
+        }
+    }
+}
+
+@include mobile {
+    .hl-heading {
+        &__outer {
+            padding-left: $spacer-0
+        }
+    }
+}

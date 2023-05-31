@@ -1,0 +1,20 @@
+.hl-virus {
+    &__bottom-contents {
+        margin-top: $spacer-4;
+        p {
+            margin-bottom: $spacer-2;
+            font-size: 14px;
+            line-height: 18px;
+            &:last-child {
+                margin-bottom: $spacer-0;
+            }
+        }
+        a {
+            color: $color-green-2;
+            &:hover {
+                color: $color-green-2;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.hl-inline-banner {
+  &__outer {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 32px;
+    display: flex;
+    justify-content: end;
+  }
+  &__inner {
+    width: 50%;
+  }
+  &__head {
+    color: $color-white;
+    font-size: 32px;
+    font-weight: $font-bold;
+    margin-bottom: $spacer-3;
+    span {
+      color: $color-green-2;
+    }
+  }
+  .hl-btn {
+    color: #8bc73f;
+  }
+  .hl-btn:hover svg circle {
+    fill: #8bc73f;
+  }
+  .hl-btn:hover svg path {
+    stroke: #ffffff;
+  }
+}
+@include mobile-tablet {
+  .hl-inline-banner {
+    &__outer {
+      justify-content: start;
+      background-position: unset;
+    }
+    &__inner {
+      width: 100%;
+    }
+  }
+}

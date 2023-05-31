@@ -1,0 +1,171 @@
+.hl-article-tile {
+  position: relative;
+  z-index: 999;
+  &::before {
+    content: "";
+    background-image: url(../images/article-tile-bg-1.jpg);
+    background-size: cover;
+    // background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 235px;
+    z-index: -999;
+    top: 0px;
+    left: 0px;
+    background-position: right;
+  }
+  &::after {
+    content: "";
+    background-image: url(../images/article-tile-bg-2.jpg);
+    background-size: cover;
+    // background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 235px;
+    z-index: -999;
+    bottom: 0px;
+    left: 0px;
+    background-position: left;
+  }
+  &__outer {
+  }
+  &__tile-wrapper {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+    margin: 0px -8px;
+  }
+  &__tile {
+    width: calc(50% - 16px);
+    margin: $spacer-2;
+    border: 1px solid #d8d8d8;
+    background-color: $color-white;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__text {
+    font-size: 18px;
+    color: $color-green-2;
+    font-weight: $font-semi-bold;
+    padding: $spacer-6 $spacer-4;
+  }
+  &__border-top {
+    position: relative;
+    padding-top: $spacer-3;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      border-top: 1px solid #259b97;
+      border-right: 1px solid #259b97;
+    }
+  }
+}
+.hl-article-vacccine {
+  .hl-btn {
+    padding: $spacer-2 $spacer-5;
+    color: $color-white;
+    background-color: $color-green-2;
+    &:hover {
+      color: $color-white;
+      background-color: $color-green-2;
+    }
+  }
+
+  .hl-dr-sec__contents{
+    padding-top: 0;
+  }
+
+  .hl-dr-sec__img {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+  }
+  &__subtxt {
+    color: $color-green-2;
+    font-size: 20px;
+    font-weight: $font-bold;
+    text-align: center;
+    margin-bottom: $spacer-3;
+  }
+  .hl-dr-sec__inner-wrap::after {
+    content: none;
+  }
+  .reverse--top,
+  .reverse--top{
+    align-items: flex-start;
+  }
+
+  .reverse--top::after {
+    content: none;
+  }
+  .hl-dr-sec__img-sec{
+    align-items: flex-start;
+  }
+  .hl-dr-sec__img-sec::after {
+    content: none;
+  }
+}
+
+@include tablet {
+  .hl-article-tile {
+    // &__outer {
+    //     &::before {
+    //         background-position: right;
+    //     }
+    //     &::after {
+    //         background-position: left;
+    //     }
+    // }
+    &__tile-wrapper {
+      padding: 40px 0px;
+    }
+    &__text {
+      padding: $spacer-5 $spacer-4;
+    }
+  }
+}
+
+@include mobile {
+  .hl-article-tile {
+    // &__outer {
+    //     &::before {
+    //         background-position: right;
+    //     }
+    //     &::after {
+    //         background-position: left;
+    //     }
+    // }
+    &__tile-wrapper {
+      flex-direction: column;
+      padding: $spacer-5 $spacer-0;
+      margin: $spacer-0;
+    }
+    &__tile {
+      width: 100%;
+      margin: $spacer-2 $spacer-0;
+    }
+    &__text {
+      padding: $spacer-4 $spacer-4;
+    }
+  }
+// 29-11-2022
+  .hl-article-vacccine{
+    .hl-dr-sec__inner-wrap{
+      margin-bottom: 0;
+    }
+    .hl-dr-sec__img-sec img{
+      height: auto;
+    }
+    .hl-dr-sec__img-sec{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+}

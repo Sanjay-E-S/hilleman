@@ -1,0 +1,86 @@
+.hl-job-description {
+    margin-top: $spacer-5;
+    &__mainHd {
+        margin-bottom: 0px !important;
+    }
+    &__subHd {
+        margin-bottom: $spacer-4;
+        text-align: center;
+    }
+    &__job-accordian {
+        border: #EDEDED solid 1px;
+        padding: $spacer-4 $spacer-3;
+        margin-bottom: $spacer-3;
+        p {
+            color: $color-temp-black;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0 0 0 20px;
+            li {
+                list-style-type: disc;
+                margin-bottom: $spacer-2;
+                color: $color-temp-black;
+                font-size: 16px;
+                line-height: 20px;
+                &::marker {
+                    color: $color-black;
+                }
+                .no-mark {
+                    margin-top: $spacer-2;
+                    li {
+                        list-style: circle;
+                    }
+                }
+            }
+        }
+    }
+    &__job-hd {
+        color: $color-black;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: $font-bold;
+        margin-bottom: $spacer-3;
+    }
+    &__head-share {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacer-2;
+        width: 100%;
+        align-items: flex-start;
+    }
+    &__share-icon {
+        width: 20px;
+        height: 20px;
+    }
+    &__head-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__apply-btn {
+        text-align: center;
+        margin-bottom: $spacer-5;
+    }
+}
+
+@include tablet-desktop {
+    .hl-job-description {
+        &__head-share {
+            margin-bottom: $spacer-0;
+        }
+        &__job-accordian {
+            margin-bottom: $spacer-4;
+        }
+        &__job-hd {
+            font-size: 22px;
+            line-height: 26px;
+            margin-bottom: $spacer-4;
+        }
+    }
+}
+
+@include desktop {}
