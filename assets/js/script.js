@@ -108,3 +108,11 @@ const FilterClick = () => {
 };
 FilterClick();
 // Filter Button end
+
+$('.hl-internship__testimonials').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
