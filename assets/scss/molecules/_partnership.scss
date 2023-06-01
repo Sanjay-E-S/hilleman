@@ -17,3 +17,15 @@
         color: #858585;
     }
 }
+
+@include tablet {
+    .hl-partnership {
+        text-align: center;
+    }
+}
+
+@include mobile {
+    .hl-partnership {
+        text-align: center;
+    }
+}

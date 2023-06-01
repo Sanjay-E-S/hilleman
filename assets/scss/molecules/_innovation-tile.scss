@@ -49,11 +49,17 @@
                 margin-left: 0;
             }
         }
+
+        .hl-research__title {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
 
 @include mobile {
     .hl-inntile {
+
         &.hl-research {
             padding: 0;
         }
@@ -72,6 +78,15 @@
             .hl-research__left {
                 margin-left: 0;
             }
+        }
+
+        .hl-research__outer {
+            margin: 32px 0;
+        }
+
+        .hl-research__title {
+            width: 100%;
+            text-align: center;
         }
     }
 }
