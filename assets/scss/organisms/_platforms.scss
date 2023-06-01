@@ -1,0 +1,10 @@
+.hl-platforms {
+    &__head {
+        text-align: center;
+        padding: $spacer-5 0;
+
+        .hl-btn {
+            margin-top: $spacer-3;
+        }
+    }
+}
