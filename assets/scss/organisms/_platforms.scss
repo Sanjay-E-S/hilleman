@@ -1,0 +1,23 @@
+.hl-platforms {
+    &__head {
+        padding-bottom: 0;
+        text-align: center;
+        padding: $spacer-5 0;
+
+        .hl-btn {
+            margin-top: $spacer-3;
+        }
+    }
+}
+
+@include mobile {}
+
+.hl-platforms {
+    &__head {
+        padding-bottom: 0;
+
+        .hl-whatwedo__title {
+            font-size: 30px;
+        }
+    }
+}
