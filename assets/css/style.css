@@ -4650,12 +4650,16 @@ button {
     margin-bottom: 16px;
   }
 }
+.hl-ourjourney {
+  padding: 32px 0;
+}
 .hl-ourjourney__timeline {
-  max-width: 900px;
   width: 100%;
   margin: 0 auto;
+  padding: 32px 0;
 }
 .hl-ourjourney__milestone {
+  position: relative;
   width: 50%;
   display: flex;
   align-items: center;
@@ -4664,12 +4668,28 @@ button {
   background-size: contain;
   background-image: none !important;
   padding: 0px 96px 0px 0;
+  margin-bottom: 60px;
+}
+.hl-ourjourney__milestone:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.hl-ourjourney__milestone:nth-child(even) .hl-ourjourney__yr {
+  position: absolute;
+  top: 60%;
+  right: -120px;
+  transform: translateY(-50%);
+  width: 240px;
+}
+.hl-ourjourney__milestone:nth-child(even) .hl-ourjourney__yr img {
+  width: 100%;
 }
 .hl-ourjourney__milestone:nth-child(even) p {
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   min-height: 160px;
+  max-width: 70%;
   border-top: 2px dashed var(--color-accent);
   border-bottom: 2px solid var(--color-accent);
   border-top-left-radius: 999px;
@@ -4681,7 +4701,7 @@ button {
   content: "";
   position: absolute;
   top: -8px;
-  right: -8px;
+  right: -16px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
@@ -4692,12 +4712,11 @@ button {
   content: "";
   position: absolute;
   bottom: -8px;
-  right: -8px;
+  right: -16px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
   border: 2px solid var(--color-accent);
-  background-color: rgb(255, 255, 255);
 }
 .hl-ourjourney__milestone:nth-child(even) p span {
   position: absolute;
@@ -4712,12 +4731,24 @@ button {
 .hl-ourjourney__milestone:nth-child(odd) {
   margin-left: auto;
   background-position: right;
+  flex-direction: row;
+}
+.hl-ourjourney__milestone:nth-child(odd) .hl-ourjourney__yr {
+  position: absolute;
+  top: 60%;
+  left: -180px;
+  transform: translateY(-50%);
+  width: 240px;
+}
+.hl-ourjourney__milestone:nth-child(odd) .hl-ourjourney__yr img {
+  width: 100%;
 }
 .hl-ourjourney__milestone:nth-child(odd) p {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 160px;
+  max-width: 70%;
   border-top: 2px dashed var(--color-accent);
   border-bottom: 2px solid var(--color-accent);
   border-top-right-radius: 999px;
@@ -4740,12 +4771,11 @@ button {
   content: "";
   position: absolute;
   bottom: -8px;
-  left: -8px;
+  left: -16px;
   width: 16px;
   height: 16px;
   border-radius: 50%;
   border: 2px solid var(--color-accent);
-  background-color: rgb(255, 255, 255);
 }
 .hl-ourjourney__milestone:nth-child(odd) p span {
   position: absolute;
@@ -4758,6 +4788,39 @@ button {
   border-radius: 50%;
 }
 
+@media (max-width: 1024px) {
+  .hl-ourjourney__milestone {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .hl-ourjourney__milestone:nth-child(even) {
+    flex-direction: column;
+  }
+  .hl-ourjourney__milestone:nth-child(even) .hl-ourjourney__yr {
+    position: static;
+    transform: none;
+  }
+  .hl-ourjourney__milestone:nth-child(even) .hl-ourjourney__yr img {
+    width: 100%;
+  }
+  .hl-ourjourney__milestone:nth-child(even) p {
+    max-width: 90%;
+  }
+  .hl-ourjourney__milestone:nth-child(odd) {
+    flex-direction: column;
+  }
+  .hl-ourjourney__milestone:nth-child(odd) .hl-ourjourney__yr {
+    position: static;
+    transform: none;
+  }
+  .hl-ourjourney__milestone:nth-child(odd) .hl-ourjourney__yr img {
+    width: 100%;
+  }
+  .hl-ourjourney__milestone:nth-child(odd) p {
+    max-width: 90%;
+  }
+}
 .hl-capbuilding {
   padding: 32px 0;
 }
