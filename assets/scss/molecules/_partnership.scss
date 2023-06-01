@@ -1,0 +1,19 @@
+.hl-partnership {
+    // background-color: #ECF2F2;
+    padding: $spacer-4 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__title {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: $color-green-2;
+        line-height: 1;
+    }
+
+    &__para {
+        color: #858585;
+    }
+}

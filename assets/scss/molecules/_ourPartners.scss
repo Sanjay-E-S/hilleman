@@ -1,0 +1,52 @@
+.hl-ourpartner {
+    padding: $spacer-3 0;
+
+    &__outer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+    }
+
+    &__tile {
+        width: calc(25% - 16px);
+        margin: 8px;
+        border: 1px solid $color-green-2;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 60px;
+            width: auto;
+        }
+    }
+}
+
+@include tablet {
+    .hl-ourpartner {
+
+        &__tile {
+            width: calc(50% - 16px);
+            min-height: 85px;
+
+            img {
+                height: 40px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .hl-ourpartner {
+
+        &__tile {
+            width: calc(100% - 16px);
+            min-height: 85px;
+
+            img {
+                height: 40px;
+            }
+        }
+    }
+}

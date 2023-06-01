@@ -1,0 +1,119 @@
+.hl-ourjourney{
+
+   &__timeline{
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+   }
+   &__milestone{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+      background-image: none !important;
+      padding: 0px 96px 0px 0;      
+      
+      &:nth-child(even){
+         p{
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 160px;
+            border-top: 2px dashed var(--color-accent);
+            border-bottom: 2px solid var(--color-accent);
+            border-top-left-radius: 999px;
+            border-bottom-left-radius: 999px;
+            border-left: 2px dashed var(--color-accent);
+            padding: 32px 44px;
+   
+            &::before{
+               content: "";
+               position: absolute;
+               top: -8px;
+               right: -8px;
+               width: 16px;
+               height: 16px;
+               border-radius: 50%;
+               border: 2px solid var(--color-accent);
+               background-color: var(--color-accent);
+            }
+            &::after{
+               content: "";
+               position: absolute;
+               bottom: -8px;
+               right: -8px;
+               width: 16px;
+               height: 16px;
+               border-radius: 50%;
+               border: 2px solid var(--color-accent);
+               background-color: rgb(255, 255, 255);
+            }
+   
+            span{
+               position: absolute;
+               left: -8px;
+               display: block;
+               border: 2px solid var(--color-accent);
+               background-color: rgb(255, 255, 255);
+               width: 16px;
+               height: 16px;
+               border-radius: 50%;
+            }
+         }
+      }
+
+      &:nth-child(odd){
+         margin-left: auto;
+         background-position: right;
+         p{
+            position: relative;
+            display: flex;
+            align-items: center;
+            min-height: 160px;
+            border-top: 2px dashed var(--color-accent);
+            border-bottom: 2px solid var(--color-accent);
+            border-top-right-radius: 999px;
+            border-bottom-right-radius: 999px;
+            border-right: 2px dashed var(--color-accent);
+            padding: 32px 44px;
+   
+            &::before{
+               content: "";
+               position: absolute;
+               top: -8px;
+               left: -8px;
+               width: 16px;
+               height: 16px;
+               border-radius: 50%;
+               border: 2px solid var(--color-accent);
+               background-color: var(--color-accent);
+            }
+            &::after{
+               content: "";
+               position: absolute;
+               bottom: -8px;
+               left: -8px;
+               width: 16px;
+               height: 16px;
+               border-radius: 50%;
+               border: 2px solid var(--color-accent);
+               background-color: rgb(255, 255, 255);
+            }
+   
+            span{
+               position: absolute;
+               right: -8px;
+               display: block;
+               border: 2px solid var(--color-accent);
+               background-color: rgb(255, 255, 255);
+               width: 16px;
+               height: 16px;
+               border-radius: 50%;
+            }
+         }
+      }
+
+   }
+}
