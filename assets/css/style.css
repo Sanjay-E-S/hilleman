@@ -4610,12 +4610,6 @@ button {
   flex: 1;
   margin: 0 16px;
 }
-.hl-whoweare__history-banner {
-  margin-bottom: 16px;
-}
-.hl-whoweare__history-banner img {
-  width: 100%;
-}
 .hl-whoweare__subsec--border {
   border-bottom: 1px solid rgb(224, 224, 224);
   padding-bottom: 24px;
