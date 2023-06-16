@@ -19,6 +19,81 @@
          margin-bottom: 16px;
       }
    }
+   &__infogrphs{
+      position: relative;
+   }
+   &__infogrphs-mid{
+      display: flex;
+      align-items: center;
+      height: 24px;
+      width: 100%;
+      margin-top: -24px;
+      
+      img{
+         width: 100%;
+         height: auto;
+      }
+   }
+   &__infogrphs-top{
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      margin: 0 -16px;
+
+      .hl-whoweare__infogrphs-tile{
+         width: calc(25% - 32px);
+         min-height: 200px;
+         display: flex;
+         align-items: center;
+         justify-content: center;         
+         margin: 0 16px;
+
+         img{
+            width: 80%;
+         }
+      }
+   }
+   &__infogrphs-bottom{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -16px;
+
+      .hl-whoweare__infogrphs-tile{
+         width: calc(33.33% - 32px);
+         padding: 0 16px;
+         margin: 32px 16px;
+         &.cyan h4{
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba(37, 155, 151, 1);
+            margin-bottom: 16px;
+         }
+         &.cyan p{
+            color: rgba(37, 155, 151, 1);
+            margin-bottom: 0;
+         }
+         &.green h4{
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba(139, 199, 63, 1);
+            margin-bottom: 16px;
+         } 
+         &.green p{
+            color: rgba(139, 199, 63, 1);
+            margin-bottom: 0;
+         }
+         &.violet h4{
+            font-size: 20px;
+            font-weight: 700;
+            color: rgba(98, 98, 155, 1);
+            margin-bottom: 16px;
+         } 
+         &.violet p{
+            color: rgba(98, 98, 155, 1);
+            margin-bottom: 0;
+         }
+      }
+   }
    &__subsechead{
       font-size: 24px;
       font-weight: 700;
@@ -143,6 +218,18 @@
       &__history-sec{
          flex-direction: column;
       }
+      &__infogrphs-mid{
+         display: none;
+      }
+      &__infogrphs-top{
+         display: none;
+      }
+      &__infogrphs-bottom{
+         .hl-whoweare__infogrphs-tile{
+            padding: 0px;
+         }
+
+      }
       &__lab{
          width: calc(100% - 32px);
          margin-bottom: 16px;
@@ -158,6 +245,13 @@
 
 @include mobile{
    .hl-whoweare{
+      &__infogrphs-bottom{
+         margin: 32px -16px;
+         .hl-whoweare__infogrphs-tile{
+            width: calc(100% - 32px);
+            margin: 16px 16px;
+         }
+      }
       &__lab{
          flex-direction: column;
          align-items: center;

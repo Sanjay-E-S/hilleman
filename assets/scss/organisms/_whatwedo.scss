@@ -71,7 +71,7 @@
     }
 }
 
-@include mobile {
+@include mobile-tablet {
     .hl-whatwedo {
         text-align: center;
         padding: $spacer-4 0;
