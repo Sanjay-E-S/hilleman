@@ -201,6 +201,7 @@ a:hover {
 
 p,
 li {
+  color: rgb(133, 133, 133);
   margin-bottom: 0;
 }
 
@@ -4842,6 +4843,7 @@ button {
   padding-top: 208px;
 }
 .hl-whoweare__procontent p {
+  color: rgb(255, 255, 255);
   font-size: 14px;
   margin-bottom: 24px;
 }
@@ -4865,10 +4867,11 @@ button {
   margin-bottom: 16px;
 }
 .hl-whoweare__vaccs li {
+  color: rgb(255, 255, 255);
   list-style: disc;
   font-size: 14px;
   margin-left: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 4px;
 }
 
 @media (max-width: 1024px) {
@@ -5164,41 +5167,25 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.hl-internship__testimonials {
+  margin: 0 -32px;
+}
 .hl-internship__testimonials .slick-arrow {
   display: none !important;
 }
 .hl-internship__testimonials .slick-dots {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hl-internship__testimonials .slick-dots li {
-  height: auto;
-  width: auto;
-  padding: 4px 0;
-  margin: 0;
-}
-.hl-internship__testimonials .slick-dots li.slick-active button {
-  height: 4px;
-}
-.hl-internship__testimonials .slick-dots button {
-  width: 60px;
-  height: 2px;
-  padding: 0;
-  background-color: rgb(37, 155, 151);
-}
-.hl-internship__testimonials .slick-dots button::before {
-  display: none;
+  display: none !important;
 }
 .hl-internship__testimonial {
   margin-top: 24px;
+  box-shadow: 0px 6px 35px rgba(37, 155, 151, 0.1);
+  margin: 0 32px;
 }
 .hl-internship__testimonial-in {
-  display: flex;
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
   position: relative;
+  display: flex;
+  width: 100%;
+  padding: 32px 24px;
 }
 .hl-internship__testimonial-in p {
   margin-bottom: 16px;
@@ -5206,7 +5193,7 @@ button {
 .hl-internship__testimonial-cont {
   flex: 1;
   margin-left: 24px;
-  margin-top: 24px;
+  margin-top: 42px;
 }
 .hl-internship__testimonial-qt {
   height: 50px;
@@ -5220,10 +5207,10 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-style: italic;
 }
 .hl-internship__testimonial-author {
-  color: rgb(37, 155, 151);
-  font-weight: 700;
+  font-size: 14px;
   margin-bottom: 0 !important;
 }
 .hl-internship__testimonial-desig {
@@ -5231,12 +5218,17 @@ button {
 }
 
 .hl-platforms__head {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 0;
   text-align: center;
   padding: 32px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .hl-platforms__head .hl-btn {
   margin-top: 16px;
+  margin-left: auto;
 }
 
 .hl-platforms__head {

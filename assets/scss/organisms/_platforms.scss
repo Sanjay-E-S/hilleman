@@ -1,11 +1,16 @@
 .hl-platforms {
     &__head {
+        display: flex;
+        flex-direction: column;
         padding-bottom: 0;
         text-align: center;
         padding: $spacer-5 0;
+        max-width: 1200px;
+        margin: 0 auto;
 
         .hl-btn {
             margin-top: $spacer-3;
+            margin-left: auto;
         }
     }
 }
