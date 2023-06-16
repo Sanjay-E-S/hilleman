@@ -1902,9 +1902,6 @@ button {
   .hl-header .nav-item {
     padding: 16px 14px;
   }
-  .hl-header .nav-item:last-child {
-    padding-right: 0;
-  }
   .hl-header .nav-item:hover .nav-link::after {
     opacity: 1;
   }
@@ -2580,14 +2577,14 @@ button {
   transition: transform 0.2s;
 }
 .hl-footer__social-icon svg {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
+}
+.hl-footer__social-icon svg path {
+  fill: hsl(0, 0%, 100%);
 }
 .hl-footer__social-icon:last-child {
   margin-right: 0;
-}
-.hl-footer__social-icon:hover {
-  transform: scale(1.1);
 }
 .hl-footer__anchor:hover {
   color: #259B97;
@@ -4185,6 +4182,27 @@ button {
   color: #000;
   font-weight: 700;
   text-align: center;
+}
+.hl-gallery__datewrap {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.hl-gallery__datewrap p {
+  line-height: 1.6;
+  color: rgb(79, 79, 79);
+}
+.hl-gallery__calsvg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+.hl-gallery__calsvg svg {
+  width: 100%;
+  height: 100%;
+  width: 18px;
+  height: 18px;
 }
 .hl-gallery__ul {
   margin-top: 8px;

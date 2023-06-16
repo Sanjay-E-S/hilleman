@@ -273,9 +273,6 @@
         }
         .nav-item {
             padding: $spacer-3 14px;
-            &:last-child {
-                padding-right: $spacer-0;
-            }
             &:hover {
                 .nav-link {
                     &::after {

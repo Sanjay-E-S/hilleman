@@ -62,14 +62,14 @@
             margin-right: $spacer-4;
             transition: transform .2s;
             svg {
-                width: 30px;
-                height: 30px;
+                width: 24px;
+                height: 24px;
+                path{
+                    fill: hsl(0, 0%, 100%);
+                }
             }
             &:last-child {
                 margin-right: $spacer-0;
-            }
-            &:hover {
-                transform: scale(1.1);
             }
         }
         &__anchor:hover {
