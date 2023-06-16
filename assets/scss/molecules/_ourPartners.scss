@@ -11,13 +11,13 @@
         width: calc(25% - 16px);
         margin: 8px;
         border: 1px solid $color-green-2;
-        min-height: 100px;
+        min-height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         img {
-            height: 60px;
+            height: 30px;
             width: auto;
         }
     }

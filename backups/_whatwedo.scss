@@ -1,0 +1,33 @@
+.hl-whatwedo {
+    text-align: center;
+    padding: $spacer-4 0;
+
+    &__title {
+        font-size: 36px;
+        font-weight: 800;
+        color: $color-black;
+        margin-bottom: $spacer-3;
+
+        span {
+            color: #259B97;
+        }
+    }
+}
+
+@include mobile {
+    .hl-whatwedo {
+        text-align: center;
+        padding: $spacer-4 0;
+
+        &__title {
+            font-size: 30px;
+            font-weight: 800;
+            color: $color-black;
+            margin-bottom: $spacer-3;
+
+            span {
+                color: #259B97;
+            }
+        }
+    }
+}

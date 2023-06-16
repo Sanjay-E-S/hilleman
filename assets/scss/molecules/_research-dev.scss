@@ -2,9 +2,11 @@
     margin: $spacer-4 0;
 
     &__title {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: $spacer-3;
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: $color-green-2;
+        line-height: 1;
     }
 
     &__outer {
