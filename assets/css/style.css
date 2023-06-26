@@ -1653,6 +1653,24 @@ button {
     text-align: center;
   }
 }
+.hl-wallquote {
+  margin: 32px 0;
+}
+.hl-wallquote__quote {
+  box-shadow: 0px 6px 35px 0px rgba(37, 155, 151, 0.1);
+  background: rgb(255, 255, 255);
+  padding: 42px 16px;
+}
+.hl-wallquote__quote-imgsec {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+.hl-wallquote__quote-img {
+  width: 100%;
+  height: auto;
+}
+
 .hl-header {
   position: fixed;
   width: 100%;

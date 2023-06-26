@@ -1,0 +1,18 @@
+.hl-wallquote{
+   margin: 32px 0;
+   
+   &__quote{
+      box-shadow: 0px 6px 35px 0px rgba(37, 155, 151, 0.10);
+      background: rgb(255, 255, 255);
+      padding: 42px 16px;
+   }
+   &__quote-imgsec{
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+   }
+   &__quote-img{
+      width: 100%;
+      height: auto;
+   }
+}  
