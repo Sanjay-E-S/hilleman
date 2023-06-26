@@ -1564,8 +1564,8 @@ button {
   align-items: center;
 }
 .hl-ourpartner__tile img {
-  height: 24px;
-  width: auto;
+  height: auto;
+  width: 46%;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1575,6 +1575,7 @@ button {
   }
   .hl-ourpartner__tile img {
     height: 40px;
+    width: auto;
   }
 }
 @media (max-width: 600px) {
@@ -1584,6 +1585,7 @@ button {
   }
   .hl-ourpartner__tile img {
     height: 40px;
+    width: auto;
   }
 }
 .hl-inntile .hl-research__outer {
@@ -5229,6 +5231,12 @@ button {
 .hl-platforms__head .hl-btn {
   margin-top: 16px;
   margin-left: auto;
+}
+.hl-platforms .hl-btn.middle svg {
+  transform: translate(0, 4px);
+}
+.hl-platforms .hl-btn.middle:hover svg {
+  transform: translate(4px, 4px);
 }
 
 .hl-platforms__head {

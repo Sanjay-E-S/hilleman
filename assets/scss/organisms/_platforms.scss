@@ -13,6 +13,16 @@
             margin-left: auto;
         }
     }
+    .hl-btn.middle{
+        svg{
+            transform: translate(0, 4px);
+        }
+        &:hover{
+            svg{
+                transform: translate(4px, 4px);
+            }    
+        }
+    }
 }
 
 @include mobile {}
