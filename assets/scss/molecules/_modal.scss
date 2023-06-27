@@ -1,0 +1,96 @@
+.hl-modal {
+
+    .modal-title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .modal-content {
+        border-radius: 8px;
+        padding: 16px;
+    }
+
+    .modal-header,
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-header {
+        padding-bottom: 16px;
+    }
+
+    .modal-body {
+        padding: 16px;
+    }
+
+    &__item {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__sharetext {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    &__shareicons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.3s;
+            }
+        }
+    }
+
+    &__copytext {
+        position: relative;
+
+        input {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+            padding: 8px;
+        }
+
+        button {
+            position: absolute;
+            right: 8px;
+            top: 5px;
+            padding: 4px 16px;
+            background-color: #259b97;
+            color: #fff;
+        }
+
+        &::after {
+            content: "Copied";
+            position: absolute;
+            top: -40px;
+            right: 0px;
+            background: #259b97;
+            color: #fff;
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-size: 15px;
+            display: none;
+        }
+
+        &.active {
+            &::after {
+                display: block;
+            }
+        }
+    }
+}

@@ -116,3 +116,16 @@ $('.hl-internship__testimonials').slick({
   slidesToShow: 2,
   adaptiveHeight: true
 });
+
+// copytext
+let copyText = document.querySelector(".hl-modal__copytext");
+copyText.querySelector("button").addEventListener("click", function () {
+  let input = copyText.querySelector("input.text");
+  input.select();
+  document.execCommand("copy");
+  copyText.classList.add("active");
+  window.getSelection().removeAllRanges();
+  setTimeout(function () {
+    copyText.classList.remove("active");
+  }, 2500);
+});
